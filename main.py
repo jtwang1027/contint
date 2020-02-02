@@ -22,7 +22,7 @@ def search():
             #diag='\n'.join(diag)
             #return (print('\n'.join(diag)))
             out= '<br/>'.join(diag)
-            return '<h1>The possible diagnoses are:</h1> {}'.format(out)
+            return '<h1>The possible diagnoses are:</h1> {}'.format( out)
 
 
     return '''<form method="POST">
