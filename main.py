@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-print(os.listdir())
+
 #data=pd.read_csv(r'~/contint/cleaned.csv')
 
 @app.route('/', methods=['GET', 'POST']) #get/post generates a request object
@@ -24,12 +24,12 @@ def search():
             #return (print('\n'.join(diag)))
             return '<h1>The possible diagnoses are:</h1> {}'.format(','.join(diag))
 
-
-    return '''<form method="POST">
-                  Symptom: <input type="text" name="symptom"><br>
+    return (print(os.listdir()))
+    #return '''<form method="POST">
+     #             Symptom: <input type="text" name="symptom"><br>
         
-                  <input type="submit" value="Submit"><br>
-              </form>'''
+      #            <input type="submit" value="Submit"><br>
+       #       </form>'''
 
 
 
