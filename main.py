@@ -20,7 +20,7 @@ def search():
             return '<h1>Matches not found. Please try again. </h1>'
         else:
             out= ','.join(diag)
-            out= '<br/>'.join(diag)
+           # out= '<br/>'.join(diag)
             return '<h1>The possible diagnoses are:</h1> {}'.format( out)
 
 
