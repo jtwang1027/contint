@@ -1,7 +1,7 @@
 
 # [START gae_python37_app]
 from flask import Flask 
-import os
+#import os
 
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
@@ -12,8 +12,8 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    files=os.listdir()
-    return ({}.files)
+
+    return ('hello world')
 
 
 if __name__ == '__main__':
