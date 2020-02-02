@@ -1,7 +1,10 @@
 from flask import Flask, request #, flash, render_template, request, url_for, redirect
 import pandas as pd
+import os
+
 app = Flask(__name__)
 
+print(os.listdir())
 #data=pd.read_csv(r'~/contint/cleaned.csv')
 
 @app.route('/', methods=['GET', 'POST']) #get/post generates a request object
