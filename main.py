@@ -12,7 +12,8 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return( print(os.listdir()))
+    files=os.listdir()
+    return ({}.files)
 
 
 if __name__ == '__main__':
