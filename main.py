@@ -19,9 +19,8 @@ def search():
         if len(diag)==0: #no matches found
             return '<h1>Matches not found. Please try again. </h1>'
         else:
-            #diag='\n'.join(diag)
-            out= ','.join(diag)
-            #out= '<br/>'.join(diag)
+            #out= ','.join(diag)
+            out= '<br/>'.join(diag)
             return '<h1>The possible diagnoses are:</h1> {}'.format( out)
 
 
