@@ -1,8 +1,10 @@
-from flask import Flask, flash, render_template, request, url_for, redirect
+from flask import Flask, request #, flash, render_template, request, url_for, redirect
 import pandas as pd
 app = Flask(__name__)
 
-data=pd.read_csv(r'C:\Users\jwang\Documents\DUKE\Courses\cloud_computing-ece590L\project1\cleaned.csv')
+url = 'https://raw.githubusercontent.com/jtwang1027/contint/master/cleaned.csv'
+data = pd.read_csv(url,index_col=0)
+
 
 @app.route('/', methods=['GET', 'POST']) #get/post generates a request object
 def search():
@@ -17,9 +19,9 @@ def search():
         if len(diag)==0: #no matches found
             return '<h1>Matches not found. Please try again. </h1>'
         else:
-            #diag='\n'.join(diag)
-            #return (print('\n'.join(diag)))
-            return '<h1>The possible diagnoses are:</h1> {}'.format(','.join(diag))
+           # out= ','.join(diag)
+            out= '<br/>'.join(diag)
+            return '<h1>The possible diagnoses are:</h1> {}'.format( out)
 
 
     return '''<form method="POST">
@@ -27,9 +29,8 @@ def search():
         
                   <input type="submit" value="Submit"><br>
               </form>'''
-#def diagnose():
+
 
 
 if __name__ == '__main__':
-    app.run(debug=True, use_debugger=False, use_reloader=False, passthrough_errors=True)
-
+    app.run(host='127.0.0.1', port=8080, debug=True)
