@@ -1,8 +1,11 @@
-from flask import Flask, flash, render_template, request, url_for, redirect
+from flask import Flask, request #, flash, render_template, request, url_for, redirect
 import pandas as pd
+import os
+
 app = Flask(__name__)
 
-data=pd.read_csv(r'cleaned.csv')
+
+#data=pd.read_csv(r'~/contint/cleaned.csv')
 
 @app.route('/', methods=['GET', 'POST']) #get/post generates a request object
 def search():
@@ -21,13 +24,13 @@ def search():
             #return (print('\n'.join(diag)))
             return '<h1>The possible diagnoses are:</h1> {}'.format(','.join(diag))
 
-
-    return '''<form method="POST">
-                  Symptom: <input type="text" name="symptom"><br>
+    return (print(os.listdir()))
+    #return '''<form method="POST">
+     #             Symptom: <input type="text" name="symptom"><br>
         
-                  <input type="submit" value="Submit"><br>
-              </form>'''
-#def diagnose():
+      #            <input type="submit" value="Submit"><br>
+       #       </form>'''
+
 
 
 if __name__ == '__main__':
