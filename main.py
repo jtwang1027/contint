@@ -2,7 +2,7 @@ from flask import Flask, request #, flash, render_template, request, url_for, re
 import pandas as pd
 app = Flask(__name__)
 
-data=pd.read_csv(r'~/contint/cleaned.csv')
+#data=pd.read_csv(r'~/contint/cleaned.csv')
 
 @app.route('/', methods=['GET', 'POST']) #get/post generates a request object
 def search():
