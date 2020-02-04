@@ -1,7 +1,7 @@
 # Continuous delivery of Google App Enginge using Google cloud platform
 
 
-<p>In continuous delivery, changes in the underlying piipeline can immediately trigger changes and updates to a running application. Google app engine&nbsp; was used&nbsp;to build and deploy a web app. After, we tested the ability to make changes to app file (main.py) and have these updates trigger and redploy an&nbsp; updated web app. The purpose of the web application is to allow users to input a symptom for a condition or disease they are interested in, and the application will give a diagnosis and return a list of possible causes.</p>
+<p>In continuous delivery, code changes in the underlying pipeline can immediately trigger changes and updates to a running application. Google app engine&nbsp; was used&nbsp;to build and deploy a web app. After, we tested the ability to make changes to app file (main.py) and have these updates trigger and redploy an&nbsp; updated web app. The purpose of the web application is to allow users to input a symptom for a condition or disease they are interested in, and the application will give a diagnosis and return a list of possible causes.</p>
 
 <p>Google&#39;s App Engine was used to build and deploy a web application using the key files:</p>
 
