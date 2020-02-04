@@ -10,7 +10,7 @@
 	<li>app.yaml : &nbsp;specifies the python runtime</li>
 	<li>requirements.txt : additional packages that need to be installed</li>
 	<li>cleaned.csv : contains symptoms and diagnosis data. This was pulled from&nbsp;kaggle (<a href="https://www.kaggle.com/plarmuseau/sdsort" rel="nofollow">https://www.kaggle.com/plarmuseau/sdsort</a>).&nbsp;</li>
-	<li>cloudbuild.yaml : only needed for continuous delivery and responding to triggers</li>
+	<li>cloudbuild.yaml : builds the application</li>
 </ul>
 
 <p>To see a demo of this web app, view the demo mp4 video.</p>
