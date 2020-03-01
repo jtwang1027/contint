@@ -11,6 +11,7 @@ Google's App Engine was used to build and deploy a web application using the key
 -*cloudbuild.yaml* : builds the application  
 
 To see a demo of this web app, view the demo mp4 video.[(link)](https://github.com/jtwang1027/contint)  
+*Screenshots below*
 <img width="762" alt="search" src="https://user-images.githubusercontent.com/46359281/75284908-a1aec680-57e3-11ea-8053-a1640e6482f9.png">
 <img width="744" alt="diagnosis" src="https://user-images.githubusercontent.com/46359281/75284881-98bdf500-57e3-11ea-87ae-1a97c7b0b89b.png">
 <img width="706" alt="gcp_trigger" src="https://user-images.githubusercontent.com/46359281/75284851-8cd23300-57e3-11ea-9d24-4b5685b5849b.png">
